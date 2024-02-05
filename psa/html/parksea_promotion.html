@@ -6,131 +6,135 @@
     <title>parksea_promotion</title>
     <link rel="stylesheet" href="/Mission03_Study02_Team/psa/css/Loseark_promotion.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="/Mission03_Study02_Team/psa/css/style.css">
 </head>
+
 <body>
         <!-- https://getbootstrap.kr/docs/5.0/components/navbar/ -->
         <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
-        <a class="navbar-brand" href="parksea.html"><img src="/Mission02_Study02_Team/psa/image/Loseark_3_png.png" alt="Loseark" style="width: 15vw; height: auto; margin-left: 20px;"></a>
+            <div class="container-fluid">
+            <!-- 기존 로고 이미지는 d-lg-inline 클래스로 데스크탑 사이즈 이상에서만 표시 -->
+            <a class="navbar-brand" href="parksea.html"><img src="/Mission02_Study02_Team/psa/image/Loseark_3_png.png" alt="Loseark" style="width: 15vw; height: auto; margin-left: 20px;"></a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" id="navbar-toggler">
-            <span class="navbar-toggler-icon" id="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"   aria-expanded="false">
-                새소식
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">이벤트</a></li>
-                </ul>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"  aria-expanded="false">
-                게임정보
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="parksea_about.html" target="_blank">세계관</a></li>
-                <li><a class="dropdown-item" href="parksea_promotion.html">클래스</a></li>
-                <li><a class="dropdown-item" href="#">컨텐츠</a></li>
-                </ul>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" id="navbar-toggler">
+                <span class="navbar-toggler-icon" id="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"  aria-expanded="false">
-                    커뮤니티
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"   aria-expanded="false">
+                    새소식
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <li><a class="dropdown-item" href="#">자유</a></li>
-                    <li><a class="dropdown-item" href="#">Q&A</a></li>
+                    <li><a class="dropdown-item" href="#">공지사항</a></li>
+                    <li><a class="dropdown-item" href="#">이벤트</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"  aria-expanded="false">
-                    마이페이지
+                    게임정보
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <li><a class="dropdown-item" href="#">내정보</a></li>
-                    <li><a class="dropdown-item" href="#">회원정보수정</a></li>
+                    <li><a class="dropdown-item" href="parksea_about.html">세계관</a></li>
+                    <li><a class="dropdown-item" href="parksea_promotion.html">클래스</a></li>
+                    <li><a class="dropdown-item" href="#">컨텐츠</a></li>
                     </ul>
-                </li>                    
-            </li>
-            </ul>
-        </div>
-        <!-- 데스크탑에서만 보이는 검색창 -->
-        <form class="d-none d-lg-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="con">
-            <button class="btn btn-primary" type="submit" id="sc">Search</button>
-        </form>
-        </div>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"  aria-expanded="false">
+                        커뮤니티
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">자유</a></li>
+                        <li><a class="dropdown-item" href="#">Q&A</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"  aria-expanded="false">
+                        마이페이지
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">내정보</a></li>
+                        <li><a class="dropdown-item" href="#">회원정보수정</a></li>
+                        </ul>
+                    </li>                    
+                </li>
+                </ul>
+            </div>
+            <!-- 데스크탑에서만 보이는 검색창 -->
+            <form class="d-none d-lg-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="con">
+                <button class="btn btn-primary" type="submit" id="sc">Search</button>
+            </form>
+            </div>
         </nav>
 
-        <!-- Main -->
-					<div id="main">
-						<article class="thumb">
-							<a href="/Mission03_Study02_Team/psa/image/js_b_c.png" class="image"><img src="images/thumbs/01.jpg" alt="" /></a>
-							<h2>Magna feugiat lorem</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/02.jpg" class="image"><img src="images/thumbs/02.jpg" alt="" /></a>
-							<h2>Nisl adipiscing</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/03.jpg" class="image"><img src="images/thumbs/03.jpg" alt="" /></a>
-							<h2>Tempus aliquam veroeros</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/04.jpg" class="image"><img src="images/thumbs/04.jpg" alt="" /></a>
-							<h2>Aliquam ipsum sed dolore</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/05.jpg" class="image"><img src="images/thumbs/05.jpg" alt="" /></a>
-							<h2>Cursis aliquam nisl</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/06.jpg" class="image"><img src="images/thumbs/06.jpg" alt="" /></a>
-							<h2>Sed consequat phasellus</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/07.jpg" class="image"><img src="images/thumbs/07.jpg" alt="" /></a>
-							<h2>Mauris id tellus arcu</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/08.jpg" class="image"><img src="images/thumbs/08.jpg" alt="" /></a>
-							<h2>Nunc vehicula id nulla</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/09.jpg" class="image"><img src="images/thumbs/09.jpg" alt="" /></a>
-							<h2>Neque et faucibus viverra</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/10.jpg" class="image"><img src="images/thumbs/10.jpg" alt="" /></a>
-							<h2>Mattis ante fermentum</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/11.jpg" class="image"><img src="images/thumbs/11.jpg" alt="" /></a>
-							<h2>Sed ac elementum arcu</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/12.jpg" class="image"><img src="images/thumbs/12.jpg" alt="" /></a>
-							<h2>Vehicula id nulla dignissim</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-					</div>
+		<div class="container">
+			<div class="slide" style="background-image: url('https://private-user-images.githubusercontent.com/156178571/302386326-9ac55065-d5ac-40eb-9e85-e7da79ec36da.PNG?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDcxNTY1MjAsIm5iZiI6MTcwNzE1NjIyMCwicGF0aCI6Ii8xNTYxNzg1NzEvMzAyMzg2MzI2LTlhYzU1MDY1LWQ1YWMtNDBlYi05ZTg1LWU3ZGE3OWVjMzZkYS5QTkc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMjA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDIwNVQxODAzNDBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hZGE4MThmM2VkMzYxMGU4NDMyYjI4ZjJkZTNmZjU1NTM3ZWY0M2E2NWZjMjczNWZiODQxZjcxNTlhNjY3ZjE3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.Zuo0DUBPfWVbJ1efWbjzbz3IRKWWHw5WpY1EwBbP6Gs');">
+			<h3 >WorriorMan</h3>
+			</div>
 
+			<div class="slide" style="background-image: url('https://private-user-images.githubusercontent.com/156178571/302386390-7a3948fc-6292-4a08-859e-43b022e1652b.PNG?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDcxNTY4MjksIm5iZiI6MTcwNzE1NjUyOSwicGF0aCI6Ii8xNTYxNzg1NzEvMzAyMzg2MzkwLTdhMzk0OGZjLTYyOTItNGEwOC04NTllLTQzYjAyMmUxNjUyYi5QTkc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMjA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDIwNVQxODA4NDlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kMTk4M2ZlNTc1MmI4ZjQyNGM4NTBjNDE0ZjBhNGMzYmFmNDBhZDJjYjYyY2E3ZTZmOTc5YWYxNGQ4MmZhMTZlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.rbFBrWNTCLI-v8Ok2qcmIUz_hp7FQMNM1q0UWJTkzEE');">
+			<h3>WorriorWoman</h3>
+			</div>
 
+			<div class="slide" style="background-image: url('https://private-user-images.githubusercontent.com/156178571/302386473-bac7a5fa-c12e-43c8-9aaa-616e2afde838.PNG?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDcxNTY1NTgsIm5iZiI6MTcwNzE1NjI1OCwicGF0aCI6Ii8xNTYxNzg1NzEvMzAyMzg2NDczLWJhYzdhNWZhLWMxMmUtNDNjOC05YWFhLTYxNmUyYWZkZTgzOC5QTkc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMjA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDIwNVQxODA0MThaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00NTJiODYyMzU0NGY5ZGQ1YjNkN2VjYjM3ZjU2M2EzMGRmMGNhZmNiNTUwMzI5ZDgyYjBhOWExZGQ0YTg5NmUwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.vUvL1jxTLaTSq68lz-aDaZlZZTilVCo19PauVADfPI8');">
+			<h3>FighterMan</h3>
+			</div>
 
-</body>
+			<div class="slide" style="
+					background-image: url('https://private-user-images.githubusercontent.com/156178571/302386558-8a42a377-ac8b-4f8e-a83e-2604ddd00a03.PNG?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDcxNTY3ODAsIm5iZiI6MTcwNzE1NjQ4MCwicGF0aCI6Ii8xNTYxNzg1NzEvMzAyMzg2NTU4LThhNDJhMzc3LWFjOGItNGY4ZS1hODNlLTI2MDRkZGQwMGEwMy5QTkc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMjA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDIwNVQxODA4MDBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zYTMyODllMTQxYmY1ODI1YmEwYmZlNTliNGY3MTZhOWM1NTNhZGY5NzE2OTc0ZWIzY2JjOTJkOWVhZTNmNGFjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.3cIEXq8l3cu8j1stiC4XQN67318wA1_FiSsAWC5K2hY');
+				">
+			<h3>FighterWoman</h3>
+			</div>
+
+			<div class="slide" style="
+					background-image: url('https://private-user-images.githubusercontent.com/156178571/302386602-4b7335ef-99ab-455d-9ec4-e6412908ffd5.PNG?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDcxNTY1OTEsIm5iZiI6MTcwNzE1NjI5MSwicGF0aCI6Ii8xNTYxNzg1NzEvMzAyMzg2NjAyLTRiNzMzNWVmLTk5YWItNDU1ZC05ZWM0LWU2NDEyOTA4ZmZkNS5QTkc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMjA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDIwNVQxODA0NTFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05ZDQwNGQxMjA1MGMxYzcxMzJiNGI4MjU3ZGY3NGE1NzI1ZTgzNDBkN2IxNTYyNTlmMDk0ZDUxMDQ1OTY0NmEyJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.uyKexoj5ZN1p36U6PjubgaMiAZuJ-ZFVzYBglBEjiuQ');
+				">
+			<h3>HunterMan</h3>
+			</div>
+
+			<div class="slide" style="
+					background-image: url('https://private-user-images.githubusercontent.com/156178571/302386680-90693086-d931-4a90-9da2-c09c7a140585.PNG?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDcxNTY2MTAsIm5iZiI6MTcwNzE1NjMxMCwicGF0aCI6Ii8xNTYxNzg1NzEvMzAyMzg2NjgwLTkwNjkzMDg2LWQ5MzEtNGE5MC05ZGEyLWMwOWM3YTE0MDU4NS5QTkc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMjA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDIwNVQxODA1MTBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lYWUyN2VkMmE0M2I4MzMxYTY1MGZlZTE5NGE0YmY1ODM0MTZhNTBjNDI2OTU3YTU1NTA4YmQzMjY0YWU0NzU1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.1SA7tIF36iw95jca-Kr_F3gjuZFCPa9QhK3a16JeI2I');
+				">
+			<h3>HunterWoman</h3>
+			</div>
+
+			<div class="slide" style="
+					background-image: url('https://private-user-images.githubusercontent.com/156178571/302386768-d784744b-5f05-40c3-afb2-b37c43c83a1d.PNG?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDcxNTY2MjMsIm5iZiI6MTcwNzE1NjMyMywicGF0aCI6Ii8xNTYxNzg1NzEvMzAyMzg2NzY4LWQ3ODQ3NDRiLTVmMDUtNDBjMy1hZmIyLWIzN2M0M2M4M2ExZC5QTkc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMjA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDIwNVQxODA1MjNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02N2RlNjQ0YjI5MDZkY2RiN2ZhNDE2YTgyYWZhMzE0NTE2YmViNDQ0ODI5ZmE2NDYyZTVlYzk0ZTUzOGM5NGJiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.vuZYHQawt8Md7I1B0SCR9ajldJ8v7-s-anOeBXzDqJQ');
+				">
+			<h3>Magician</h3>
+			</div>
+
+			<div class="slide" style="
+					background-image: url('https://private-user-images.githubusercontent.com/156178571/302386842-8a50a183-a3ee-4969-991a-09ddbf5e9e02.PNG?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDcxNTY2NDMsIm5iZiI6MTcwNzE1NjM0MywicGF0aCI6Ii8xNTYxNzg1NzEvMzAyMzg2ODQyLThhNTBhMTgzLWEzZWUtNDk2OS05OTFhLTA5ZGRiZjVlOWUwMi5QTkc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMjA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDIwNVQxODA1NDNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yZDVlMTg5NTA2MmJiNzI1MThlMjkyZmE0MGE4N2NjNWRlMTBmMDE5ZDNjYTY0OWFhZGU0ZDNmYWJjZDI0ODM3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.1iXeZb9kegUhVcTX_Ji33MUZ8KGaKIsL_jWkjsdtq-4');
+				">
+			<h3>Assassin</h3>
+			</div>
+
+			<div class="slide" style="
+					background-image: url('https://private-user-images.githubusercontent.com/156178571/302386920-1ee3a3d3-54a3-418f-b39a-a706519149a1.PNG?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDcxNTY2NjEsIm5iZiI6MTcwNzE1NjM2MSwicGF0aCI6Ii8xNTYxNzg1NzEvMzAyMzg2OTIwLTFlZTNhM2QzLTU0YTMtNDE4Zi1iMzlhLWE3MDY1MTkxNDlhMS5QTkc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMjA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDIwNVQxODA2MDFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01Njk2YjY1YzE3NzA1NTgyODVkYmE0YWU4M2Q3ZGY1YTNiZjgzMDQwNWM2YjhkMWQxYzQ1NWFhNzFjMmVmMDUzJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.z3qes7G-NggXVzVIOdxJC6hwH0Fg1pVt1EotHBJ7tSk');
+				">
+			<h3>Specialist</h3>
+			</div>
+		</div>
+				
+
+				<!-- jQuery -->
+				<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+				
+				<!-- Bootstrap JS -->
+				<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+				<script src="/Mission03_Study02_Team/psa/js/script.js"></script>
+
+	<footer class="py-5 text-center text-body-secondary bg-body-tertiary">
+		<p>Thank you for visiting the Lostark website <br>
+			<a href="parksea.html"> LoseArk</a> Click to see the worldview <a href="https://twitter.com/mdo"></a></p>
+		<p class="mb-0">
+			<a href="#">Back to top</a>
+		</p>
+	</footer>
+</body>	
 </html>
