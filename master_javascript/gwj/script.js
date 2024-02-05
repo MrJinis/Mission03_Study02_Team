@@ -10,22 +10,24 @@ $(".main-slide").vegas({
 });
 
 $(document).ready(function(){
-  $(".owl-carousel").owlCarousel();
+  $(".box").mouseover(function(){
+      $(this).css
+    ("background-color", "rgba(0, 0, 0, 0.5)");
+    });
+  
+  $(".box").mouseout(function(){
+    $(this).css
+    ("background-color", "rgba(0, 0, 0, 0)");
+    });
+
+  $(".innerbox3, .innerbox4").mouseover(function(){
+    $(this).css
+    ("background-color", "rgba(230, 230, 230, 0.5)");
+    });
+  $(".innerbox3, .innerbox4").mouseout(function(){
+    $(this).css
+    ("background-color", "rgba(230, 230, 230, 0)");
+    });
+
 });
 
-$('.owl-carousel').owlCarousel({
-  loop:true,
-  margin:10,
-  nav:true,
-  responsive:{
-      0:{
-          items:1
-      },
-      600:{
-          items:3
-      },
-      1000:{
-          items:5
-      }
-  }
-})
