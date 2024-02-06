@@ -29,5 +29,14 @@ $(document).ready(function(){
     ("background-color", "rgba(230, 230, 230, 0)");
     });
 
+    $(".textwrap").mouseover(function(){
+      $(this).css
+      ("background-color", "rgba(230, 230, 230, 0.5)");
+      });
+    $(".textwrap").mouseout(function(){
+      $(this).css
+      ("background-color", "rgba(0, 0, 0, 0.3)");
+      });
+  
 });
 
