@@ -14,7 +14,7 @@
 
 html{
     /* 배경 이미지를 반복하지 않고 화면 가운데 배치 적용함 */
-    background: url(../master_resource/main_bg.jpg) no-repeat center center fixed;
+    background: url(main_bg.jpg) no-repeat center center fixed;
     /* 배경 이미지 크기를 대상 요소(html, 웹 문서)에 가득 차게 표시함 */
     background-size: cover;
 }
